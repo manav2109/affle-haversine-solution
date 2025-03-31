@@ -1,4 +1,4 @@
-# 🍽️ Restaurant Lookup Engine
+# 🍽️ Restaurant Lookup Service
 
 A scalable and efficient system to find open and nearby restaurants for large sets of user locations using Haversine distance and time-aware logic.
 
