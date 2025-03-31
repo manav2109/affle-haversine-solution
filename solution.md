@@ -21,13 +21,14 @@
 |-- .gitignore             # Git exclusions
 |-- run.py                 # Main execution script
 |-- run.sh                 # Shell wrapper
-|-- sample_data_generator.py # Synthetic data generation for testing
 |--- data/
 |   |-- input/             # Input data (users and restaurants CSVs)
 |   |-- output/            # Output directory for results
 |-- src/
 |   |-- processor.py       # Core logic: matching, Haversine distance
 |   |-- runner.py          # Batch supervisor to orchestrate execution
+|-- utils/
+|   |-- sample_data_generator.py   # Synthetic data generation for testing
 |-- tests/
     |-- test_processor.py  # Unit tests for core logic
 ```

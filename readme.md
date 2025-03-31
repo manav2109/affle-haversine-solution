@@ -16,12 +16,13 @@ restaurant-lookup/
 │   ├── processor.py  # Core logic: time filters, BallTree distance
 │   ├── runner.py     # Batch runner to coordinate input/output
 │   └── __init__.py
-│
+├── utils/
+│   ├── sample_data_generator.py # Script to generate users.csv at various scales
+│   └── __init__.py
 ├── tests/            # Unit tests using pytest
 ├── run.py            # Optional entry point
 ├── run.sh            # Shell script to auto-setup, test, and run
-├── requirements.txt  # Dependency list
-└── sample_data_generator.py  # Script to generate users.csv at various scales
+└── requirements.txt  # Dependency list
 ```
 
 ---

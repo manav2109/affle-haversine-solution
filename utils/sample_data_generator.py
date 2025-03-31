@@ -2,12 +2,12 @@ import pandas as pd
 import numpy as np
 import os
 
-RESTAURANT_PATH = "data/input/restaurants.csv"
+RESTAURANT_PATH = "../data/input/restaurants.csv"
 """
 Path to the restaurants CSV file. This file contains restaurant location and metadata.
 """
 
-OUTPUT_DIR = "data/input"
+OUTPUT_DIR = "../data/input"
 """
 Directory to save generated user files. These files will serve as input for restaurant lookup.
 """
