@@ -1,3 +1,5 @@
+import os
+
 import pandas as pd
 import numpy as np
 from sklearn.neighbors import BallTree
@@ -6,7 +8,7 @@ from joblib import Parallel, delayed, cpu_count
 from tqdm import tqdm
 
 EARTH_RADIUS_KM = 6371.0
-
+batch_size = int(os.getenv("BATCH_SIZE"))
 
 class RestaurantProcessor:
     def __init__(self, static_time="12:00:00"):
@@ -108,7 +110,6 @@ class RestaurantProcessor:
         open_ids = restaurants_df['id'].to_numpy()
         open_radii = restaurants_df['availability_radius'].to_numpy(dtype=np.float32) / EARTH_RADIUS_KM
 
-        batch_size = 5000
         batches = [(user_coords[i:i + batch_size], lat_array[i:i + batch_size], lon_array[i:i + batch_size],
                     open_coords, open_ids, open_radii)
                    for i in range(0, len(user_coords), batch_size)]
