@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+.coverage*
+.pytest_cache/
+.idea/
+data/output/*
+src/__pycache__/*
+tests/__pycache__/*
